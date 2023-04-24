@@ -1,6 +1,6 @@
 Sure, here's an example of a `readme.md` for SyperBot with some emojis:
 
-# 🤖 SyperBot
+# :star: SyperBot
 
 SyperBot is a versatile chatbot designed to streamline communication within a group chat. It features a range of functionalities that enable efficient collaboration and management, including:
 
