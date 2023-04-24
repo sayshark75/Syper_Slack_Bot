@@ -14,6 +14,9 @@ SyperBot is a versatile chatbot designed to streamline communication within a gr
 
 ## 🚀 Getting Started
 
+## :framed_picture: Documentary
+<img src="https://user-images.githubusercontent.com/112304655/234028995-ee13c610-1e27-4c0e-a9a9-a7770e274bbb.png"/>
+
 To get started with SyperBot, simply add it to your chat group and grant it admin privileges. Once set up, the bot will automatically start monitoring and regulating the chat.
 
 ## 💬 Usage
