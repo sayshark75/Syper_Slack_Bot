@@ -1,0 +1,73 @@
+{
+    "display_information": {
+        "name": "SyperBot",
+        "description": "Helps Manage People and Control the Channels",
+        "background_color": "#732a73",
+        "long_description": "This Bot has all the below features\r\n- Admin Management\r\n- Stops Message Floods (if a user sends messages back to back).\r\n- Ban a user Temporarily or permanently\r\n- Set Greetings for new User or User who leaves.\r\n- Make Notes to use later and accessible to everyone, instead of scrolling up.\r\n- Pin a Message (Admin Permission Required).\r\n- Warn a User (Set What to do when the user Exceeds the \"N\" number of warnings)"
+    },
+    "features": {
+        "bot_user": {
+            "display_name": "SyperBot",
+            "always_online": false
+        },
+        "slash_commands": [
+            {
+                "command": "/notes",
+                "url": "https://syperbot.onrender.com/slack/events",
+                "description": "View Saved Notes",
+                "usage_hint": "Will load all the Saved Notes",
+                "should_escape": false
+            },
+            {
+                "command": "/save",
+                "url": "https://syperbot.onrender.com/slack/events",
+                "description": "Save Note",
+                "usage_hint": "/save<Space>title<Space>message",
+                "should_escape": false
+            },
+            {
+                "command": "/update",
+                "url": "https://syperbot.onrender.com/slack/events",
+                "description": "Update Note",
+                "usage_hint": "/update<space>title_to_update<space>updated_message",
+                "should_escape": false
+            },
+            {
+                "command": "/delete",
+                "url": "https://syperbot.onrender.com/slack/events",
+                "description": "Delete Note",
+                "usage_hint": "/delete<space>note_title",
+                "should_escape": false
+            }
+        ]
+    },
+    "oauth_config": {
+        "redirect_urls": [
+            "https://syperbot.onrender.com/slack/oauth_redirect"
+        ],
+        "scopes": {
+            "user": [
+                "im:history"
+            ],
+            "bot": [
+                "chat:write",
+                "commands",
+                "im:history"
+            ]
+        }
+    },
+    "settings": {
+        "event_subscriptions": {
+            "request_url": "https://syperbot.onrender.com/slack/events",
+            "user_events": [
+                "message.im"
+            ],
+            "bot_events": [
+                "message.im"
+            ]
+        },
+        "org_deploy_enabled": false,
+        "socket_mode_enabled": false,
+        "token_rotation_enabled": false
+    }
+}
